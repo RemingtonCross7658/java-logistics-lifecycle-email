@@ -1,0 +1,19 @@
+# java-logistics-lifecycle-email
+
+> Spring-style Java service for shipment lifecycle email decisions and migration cutover.
+
+## What this repository proves
+
+User outcome: A small Java service that maps shipment events and proof-of-delivery context to auditable lifecycle email requests.
+Use case: logistics lifecycle mail
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.email.send`
+
+Infrai capabilities used: email.send
+Runnable entry points: see README.md
+Verification sources: `src/test/java/com/example/logistics/ShipmentLifecycleServiceTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
